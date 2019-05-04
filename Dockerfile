@@ -1,4 +1,4 @@
-M debian:latest
+FROM debian:latest
 ENV  DEBIAN_FRONTEND noninteractive
 
 RUN  apt-get -q update; apt-get -y -q --no-install-recommends install wget iperf3 netcat python2.7 python-pip
